@@ -1,7 +1,7 @@
 //javascript for Trivia Game
 
 
-var count=10;
+var count=31;
 
 var counter=setInterval(countDown, 1000);
 
