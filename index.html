@@ -9,10 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
   	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 		
-    <style>
-			
-		</style>
-	
+    <style></style>
   </head>
 		
 	<body>
@@ -50,16 +47,17 @@
   			 <div class="col-lg-4">
   			   <p>What is the largest national park in the United States by total land area?</p>
             
-            <div class="radio">
-            <label>
-            <input type="radio" name="optradio" autocomplete="off">Wrangell-St Elias in Alaska</label>
-            <br>
-            <label>
-            <input type="radio" name="optradio" autocomplete="off">Denali in Alaska</label>
-            <br>
-            <label>
-            <input type="radio" name="optradio" autocomplete="off">Glacier National Park in Montana</label>
-            </div>   
+	            <div class="radio">
+	            <label>
+	            <input id="answer1" type="radio" name="optradio" autocomplete="off">Wrangell-St Elias in Alaska</label>
+	            <br>
+	            <label>
+	            <input type="radio" name="optradio" autocomplete="off">Denali in Alaska</label>
+	            <br>
+	            <label>
+	            <input type="radio" name="optradio" autocomplete="off">Glacier National Park in Montana</label>
+	            </div> 
+
   			 </div>
 
           <div class="col-lg-4">
@@ -67,14 +65,15 @@
             
             <div class="radio">
             <label>
-            <input type="radio" name="optradio" autocomplete="off">Theodore Roosevelt</label>
+            <input type="radio" name="optradio2" autocomplete="off">Theodore Roosevelt</label>
             <br>
             <label>
-            <input type="radio" name="optradio" autocomplete="off">William McKinley</label>
+            <input type="radio" name="optradio2" autocomplete="off">William McKinley</label>
             <br>
             <label>
-            <input type="radio" name="optradio" autocomplete="off">Woodrow Wilson</label>
+            <input id="answer2" type="radio" name="optradio2" autocomplete="off">Woodrow Wilson</label>
             </div>  
+          
           </div>
 
           <div class="col-lg-4">
@@ -82,13 +81,13 @@
             
             <div class="radio">
             <label>
-            <input type="radio" name="optradio" autocomplete="off">The world's largest carnivore, the Alaskan brown bear</label>
+            <input id="answer3" type="radio" name="optradio3" autocomplete="off">The world's largest carnivore, the Alaskan brown bear</label>
             <br>
             <label>
-            <input type="radio" name="optradio" autocomplete="off">The deepest lake in the U.S.</label>
+            <input id="answer4" type="radio" name="optradio3" autocomplete="off">The deepest lake in the U.S.</label>
             <br>
             <label>
-            <input type="radio" name="optradio" autocomplete="off">The lowest point in the Western Hemisphere/label>
+            <input id="answer5" type="radio" name="optradio3" autocomplete="off">The lowest point in the Western Hemisphere/label>
             </div>
           </div>
 
@@ -101,27 +100,45 @@
     <div class="col-lg-4"></div>
 
     <div class="col-lg-4">
-      <div class="timer">
-        Timer goes here
-      </div>
+
+    <div class="panel panel-default">
+  		<div class="panel-heading">
+    		<h3 class="panel-title">Time is running out!</h3>
+  		</div>
+  		<div id="timer" class="panel-body"></div>
+	</div>
+
+	</div>  <!--closing col-lg-4-->
 
     <div class="col-lg-4"></div>
  
   	 </div>  <!--closing row-->	
 
-		
 
-<!-- 	<footer style="position:fixed">
-      	<div>
-        	<p class="text-muted">Copyright &copy; 2016 Jonathan Jackson</p>
-      	</div>
-    </footer> -->
+  	<div class = "row">
+
+    <div class="col-lg-4"><h3 id="response1"></h3></div>
+
+    <div class="col-lg-4"><h3 id="response2"></h3></div>
+
+    <div class="col-lg-4"><h3 id="response3"></h3></div>
+ 
+  	</div>  <!--closing row-->	
+
+
+  	<div class = "row">
+
+    <div class="col-lg-4"></div>
+
+    <div class="col-lg-4"><h3 id="results"></h3></div>
+
+    <div class="col-lg-4"></div>
+ 
+  	</div>  <!--closing row-->	
 
 
 	</div>	
-	<script src="assets/javascript/game.js"></script>
+
+	<script src="assets/javascript/triviagame.js"></script>
 	</body>
-
-
-
 	</html>
